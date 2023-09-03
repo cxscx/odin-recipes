@@ -17,7 +17,7 @@ img {
 }
 
 a {
-    color:rgb(171, 27, 232);
+    color:rgb(255, 128, 0);
 }
 
 ol{
@@ -43,4 +43,8 @@ ol{
     /* previous 3 lines centers the button */
     text-decoration: none;
     /* 'text-decoration:none' removes underlining form hyperlink*/
+}
+
+.border{
+    border-radius: 30px;
 }
