@@ -15,6 +15,7 @@ h1{
 
 h3{
     margin-left: 0.5em;
+    font-size:22px;
 }
 
 img {
@@ -25,59 +26,144 @@ img {
     /* centers the image */
 }
 
-a {
-    color:rgb(255, 128, 0);
-    text-decoration:none
-}
-
 ol{
     list-style-type: lower-roman;
 }
 
+.title{
+    background-color:rgb(196,196,196);
+    padding: 10px;
+    border-radius:20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
-.button{
+.end{
+    padding: 4em;
+    border:0;
+    margin-top:0;
+}
+.end .button{
     align-self: center;
-    background-color:rgb(248, 168, 125);
-    border-color:rgb(255, 162, 0);
+    background-color:rgb(196, 196, 196);
+    border-color:rgb(146, 145, 145);
     color:black;
     text-align:center;
     font-size: 16px;
     padding: 15px 15px;
     border-radius:10px;
-    /* rounds out the edges of box */
-    box-shadow: 0 12px 16px 0 rgb(253, 144, 1, 0.175), 0 17px 50px 0 rgba(255, 145, 1, 0.175);
+    /* rounds out corners of box */
+    margin-bottom: 5em;
     position: absolute;
     left: 50%;
     transform:translateX(-50%);
     /* previous 3 lines centers the button */
     text-decoration: none;
-    /* 'text-decoration:none' removes underlining form hyperlink*/
+    /*removes underlining from hyperlink*/
 }
 
 .border{
     border-radius: 30px;
 }
 
-.home-recipes ul{
-    text-decoration: none;
-    list-style:square;
+.home-recipes-link ul{
+    list-style: none;
+    text-align:center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+.home-recipes-link li{
+    display:inline;
+    padding: 1em;
+    margin: 0;
+    font-weight:bold;
+}
+.home-recipes-link a{
+    background-color: rgb(230, 230, 230);
+    color: black;
+    text-decoration:none;
+    padding: 1em;
+    display:inline-block;
+    border-radius:10px;
+    border: 2px solid black;
+    margin: 5px;
 }
 
-.home-recipes li{
-    padding: 2px;
+.home-recipes-link a:hover{
+    background-color:black;
+    border: 2px solid white;
+    color:white;
 }
+/* sets command for when item is hovered over */
 
 .end-notes{
     text-align:center;
     margin-top: 20px;
+    background-color:rgb(196, 196, 196);
+    padding-top:5px;
+    padding-bottom:5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
 }
+
 
 .description{
-    margin: 2em 1em;
+    background-color:rgb(230, 230, 230);
+    border-radius:10px; 
+    margin-left: 40px;
+    margin-right:40px;
+ }
+
+ .description h3{
+    margin-bottom:0;
+    margin-left:0;
+    padding: .5em;
+    padding-left: 1em;
+    background-color:rgb(196, 196, 196);
+    border-radius:10px;
 }
 
+.description p{
+    padding: 1em;
+    padding-bottom:1.5em;
+    border-top:1em;
+    padding-top:1px;
+}
+
+.ingredients{
+    background-color:rgb(230, 230, 230);
+    border-radius:10px;   
+    margin-left: 40px;
+    margin-right:40px;
+ }
+
+ .ingredients h3{
+    margin-bottom:0;
+    margin-left:0;
+    padding: .5em;
+    padding-left: 1em;
+    background-color:rgb(196, 196, 196);
+    border-radius:10px;
+ }
+
+ .ingredients ul{
+    padding: 2em;
+    padding-left: 2.5em;
+    border-top:1em;
+    padding-top:1px;
+ }
+
+ .ingredients li{
+    padding: 1px;
+ }
+
 .preparation{
-    background-color:rgb(248, 178, 140);
+    background-color:rgb(230, 230, 230);
     border-radius:10px;   
     margin-left: 40px;
     margin-right:40px;
@@ -88,13 +174,16 @@ ol{
     margin-left:0;
     padding: .5em;
     padding-left: 1em;
-    background-color:rgb(249, 161, 113);
+    background-color:rgb(196, 196, 196);
     border-radius:10px;
 }
 
 .preparation ol{
     padding: 2em;
-    list-style-position: inside;
-    margin-top:0;
+    padding-left: 3em;
+    border-top:1em;
     padding-top:1px;
 }
+ .preparation li{
+    padding: 3px;
+ }
